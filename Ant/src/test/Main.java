@@ -8,8 +8,9 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		Test t = new Test();
-		t.init(false,50);
+		t.init(true,50); //50 zufällige städte, bei false aus datei
 		t.run();
 		t.draw();
 

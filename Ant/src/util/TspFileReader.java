@@ -22,7 +22,7 @@ public class TspFileReader {
 			
 			while(line!=null){
 				String[] splitLine = line.split(" ");
-				System.out.println(count+": "+splitLine[1]+", "+ splitLine[2]);
+				//System.out.println(count+": "+splitLine[1]+", "+ splitLine[2]);
 				Point p = new Point(new Integer(splitLine[1]),new Integer(splitLine[2]));
 				ret[count-1]=p;
 				line = bufRead.readLine();
@@ -30,8 +30,7 @@ public class TspFileReader {
 			}
 			bufRead.close();
 
-		} catch (
-Exception e) {
+		} catch (Exception e) {
 			
 			e.printStackTrace();
 		}

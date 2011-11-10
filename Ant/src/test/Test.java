@@ -11,6 +11,7 @@ import acs.ACS;
 
 public class Test {
 	
+	
 	public Point[] points;
 	static final Random random = new Random();
     JFrame F=new JFrame();
@@ -18,9 +19,6 @@ public class Test {
 	public int[] bestTour;
 	ACS acs;
 	public Test(){
-		
-		
-			
 		
 
 	}
@@ -49,18 +47,10 @@ public class Test {
 		
 
 			bestTour = acs.getBestTour();
-			System.out.print(getDistance(bestTour));
+			//System.out.print(getDistance(bestTour));
 		}
 	}
 	
-	private double getDistance(int[] bestTour2) {
-		 int i;
-		 double ret=0;
-		 for(i=0;i<acs.cityCount-1;i++)   
-			 ret+=acs.distances[bestTour[i]][bestTour[i+1]];   
-		 ret+=acs.distances[bestTour[acs.cityCount-1]][bestTour[0]];   
-		 return ret;
-	}
 
 	public void draw(){
 		
